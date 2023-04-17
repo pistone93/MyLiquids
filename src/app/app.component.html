@@ -1,15 +1,25 @@
 <div class="sidebar-container">
   <nav class="sidebar">
     <div class="sidebar-header">
-      <h1>MyLiquids</h1>
+      <h1>Menu</h1>
       <button class="close-btn" (click)="toggleSidebar()"><i class="material-icons">close</i></button>
     </div>
     <app-sidebar></app-sidebar>
   </nav>
   <div class="main-content">
-    <button class="open-btn" *ngIf="!isSidebarOpened" (click)="toggleSidebar()">
-    <i class="material-icons">menu</i>
-  </button>
+      <div class="row">
+        <div class="app-name col-6 ">
+          <button class="open-btn" *ngIf="!isSidebarOpened" (click)="toggleSidebar()" aria-label="apri menu" >
+            <i class="fas fa-bars"></i>
+          </button>
+          <h1>MyLiquids</h1>
+        </div>
+        <div class="user-settings col-6">
+          <button class="open-btn">
+            <i class="fas fa-cog"></i>
+          </button>
+        </div>
+      </div>
     <router-outlet></router-outlet>
   </div>
 </div>

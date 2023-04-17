@@ -30,3 +30,11 @@
   .sidebar-closed .main-content {
     margin-left: 0; /* larghezza della sidebar quando chiusa */
   }
+  
+  .user-settings {
+    text-align-last: right;
+  }
+
+  .app-name {
+    display: -webkit-inline-box;
+  }

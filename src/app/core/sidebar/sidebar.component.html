@@ -1,14 +1,5 @@
 <ul class="sidebar-nav">
-    <li class="sidebar-nav-item">
-      <a routerLink="/dashboard" routerLinkActive="active"><i class="material-icons">dashboard</i><span>Dashboard</span></a>
-    </li>
-    <li class="sidebar-nav-item">
-      <a routerLink="/products" routerLinkActive="active"><i class="material-icons">inventory</i><span>Prodotti</span></a>
-    </li>
-    <li class="sidebar-nav-item">
-      <a routerLink="/orders" routerLinkActive="active"><i class="material-icons">shopping_cart</i><span>Ordini</span></a>
-    </li>
-    <li class="sidebar-nav-item">
-      <a routerLink="/customers" routerLinkActive="active"><i class="material-icons">people</i><span>Clienti</span></a>
+    <li class="sidebar-nav-item" *ngFor="let voice of menuVoice">
+      <a routerLink="{{voice.link}}" routerLinkActive="active"><i class="material-icons">{{voice.name}}</i></a>
     </li>
   </ul>
