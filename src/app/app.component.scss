@@ -1,0 +1,33 @@
+.sidebar-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .sidebar {
+    position: absolute;
+    top: 0;
+    left: -200px;
+    width: 200px;
+    height: 100%;
+    background-color: #f2f2f2;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .sidebar.open {
+    left: 0;
+  }
+  
+  .main-content {
+    margin-left: 200px;
+    padding: 20px;
+  }
+  
+  .sidebar-opened .main-content {
+    margin-left: 200px; /* larghezza della sidebar quando aperta */
+  }
+  
+  .sidebar-closed .main-content {
+    margin-left: 0; /* larghezza della sidebar quando chiusa */
+  }
